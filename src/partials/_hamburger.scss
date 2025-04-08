@@ -1,0 +1,60 @@
+@use "./fonts";
+@use "./media" as m;
+@use "./colors" as c;
+
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+  }
+  
+  .bm-burger-bars {
+    background: c.$hoverColor;
+  }
+ 
+  .bm-burger-bars-hover {
+    background: black;
+  }
+  
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .bm-cross {
+    background: c.$hoverColor;
+  }
+  
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    // width: 100px;
+  }
+
+  .bm-menu {
+    background: c.$backgroudB;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    // width: 100px;
+  }
+  
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    // width: 100px;
+  }
+
+  .bm-item {
+    display: inline-block;
+  }
+  
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    // width: 100px;
+  }

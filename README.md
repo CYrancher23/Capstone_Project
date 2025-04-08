@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#Other dependencies
+npm install sass
+npm install react-burger-menu --save
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,0 +1,99 @@
+@use "../../partials/_fonts.scss";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+@use "../../partials/hamburger";
+
+
+.nav{
+    z-index: 90000;
+    background-color: c.$backgroudB;
+    padding: 1rem;
+   
+    @include m.desktop{
+    display: flex;
+    }
+    
+
+&__title{
+    
+
+    @include m.tablet{
+        font-size: 1rem;
+        color: white;
+        padding-top: 1.5rem;
+        // margin: 1rem;
+    }
+  
+    @include m.desktop{
+
+    }
+   
+}
+
+&__title:hover{
+    color:c.$hoverColor;
+} 
+
+&__container{
+    @include m.desktop{
+        margin-right: 1rem;
+        
+    }
+}
+
+&__logo{
+    
+    margin: .5rem 1rem ;
+    height: 5rem;
+    width: 5rem;
+
+    @include m.tablet{
+        height: 6rem;
+        width: 6rem; 
+       
+    }
+
+    @include m.desktop{
+        height: 6rem;
+        width: 6rem; 
+        margin: 0 4rem;
+    }
+
+}
+
+&__text{
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+&__text:hover{
+    color:c.$hoverColor;
+} 
+
+&__pages{
+    display: none;
+
+    @include m.desktop{
+        width: 70%; 
+        display: flex;
+        align-items: center;
+    }
+}
+
+&__hamburger{
+    width:100px;
+    @include m.desktop{
+        display: none;
+    }
+}
+
+
+}
+
+#hamburger{
+    width: 50% !important;
+}
+#span{
+    font-size: 1rem;
+}
