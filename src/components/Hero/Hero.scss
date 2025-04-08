@@ -1,0 +1,45 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+
+
+.hero{
+    background-image: url(../../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include m.tablet{
+        height: 300px;
+    }
+
+    @include m.desktop{
+        height: 500px;
+    }
+    &__logo{
+        height: 50%; /* 100px/200 */
+        width: 42.8125%; /* 137px/320 */
+        @include m.tablet{
+            height: 66.666667%; /* 200px/300 */
+            width: 35.807292%; /* 275px/768 */
+        }
+
+        @include m.desktop{
+            height: 60%; /* 300px/500 */
+            width: 32.1875%; /* 412px/1280 */
+        }
+    }
+
+    &__text{
+        font-size: 1rem;
+        margin: 1rem;
+        text-align: center;
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+    }
+
+}

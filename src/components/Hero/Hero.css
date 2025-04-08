@@ -1,0 +1,88 @@
+* {
+  font-family: "Newsreader", sans-serif;
+  color: #403A36;
+}
+
+/*desktop*/
+.hero {
+  background-image: url(../../assets/images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 321px) {
+  .hero {
+    height: 300px;
+  }
+  .hero #primary {
+    width: 100%;
+  }
+  .hero #secondary {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    height: 500px;
+  }
+  .hero #primary {
+    width: 100%;
+  }
+  .hero #secondary {
+    width: 50%;
+  }
+}
+.hero__logo {
+  height: 50%;
+  /* 100px/200 */
+  width: 42.8125%;
+  /* 137px/320 */
+}
+@media screen and (min-width: 321px) {
+  .hero__logo {
+    height: 66.666667%;
+    /* 200px/300 */
+    width: 35.807292%;
+    /* 275px/768 */
+  }
+  .hero__logo #primary {
+    width: 100%;
+  }
+  .hero__logo #secondary {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero__logo {
+    height: 60%;
+    /* 300px/500 */
+    width: 32.1875%;
+    /* 412px/1280 */
+  }
+  .hero__logo #primary {
+    width: 100%;
+  }
+  .hero__logo #secondary {
+    width: 50%;
+  }
+}
+.hero__text {
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 321px) {
+  .hero__text {
+    font-size: 1.5rem;
+  }
+  .hero__text #primary {
+    width: 100%;
+  }
+  .hero__text #secondary {
+    width: 50%;
+  }
+}/*# sourceMappingURL=Hero.css.map */

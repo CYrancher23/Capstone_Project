@@ -1,0 +1,121 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+
+
+.home{
+    margin: 1rem;    
+
+    @include m.tablet{
+        margin: 1.5rem;
+    }
+
+    @include m.desktop{
+        display: flex;
+        justify-content: space-evenly;
+        height: 75vh;
+    }
+
+    &__card{
+        height: 33.789954%; /* 370px/1095 */
+        width: 100%;
+        border:2px solid lightgrey;
+        margin: 1.5rem 0;
+
+        @include m.tablet{
+            height: 612px;
+        }
+
+        @include m.desktop{
+            width:25%;
+            height: 75%;
+        }
+    }
+
+
+    &__img{
+        height: 57.30659%; /* 200px/349 */
+        width: 100%;
+        object-fit:cover;
+        
+        
+
+        @include m.tablet{
+            height: 45%;
+        }
+    }
+
+    &__title{
+        font-size: 1.4rem;
+
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+
+        @include m.desktop{
+           
+        }
+       
+    }
+
+    &__text{
+        font-size: 1rem;
+        
+        @include m.tablet{
+            font-size: 1.3rem;
+        }
+
+        @include m.desktop{
+            height: 80px;
+            min-width: 0;
+            max-width: 100%;
+            overflow:auto;
+
+        }
+    }
+
+    &__button{
+        background-color: #3296FA;
+        color: white;
+        border: none;
+        height: 2rem;
+        width: 5.625rem;
+
+        @include m.tablet{
+            width: 176px;
+            height: 3rem;
+            font-size: 1.25rem;
+        }
+        @include m.desktop{
+            width: 9.375rem;
+        }
+        
+    }
+
+    &__info{
+        margin: .5rem;
+        @include m.tablet{
+            margin: 1rem;
+        }
+
+        @include m.desktop{
+            height: 50%; 
+        }
+        
+    }
+
+    &__container-button{
+        height: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+
+        @include m.tablet{
+            height: 30%;
+            width: 100%;
+        }
+        @include m.desktop{
+
+        }
+    }
+}

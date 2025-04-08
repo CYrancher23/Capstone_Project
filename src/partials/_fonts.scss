@@ -1,0 +1,31 @@
+// @font-face {
+//     font-family: "Newsreader-regular";
+//     src: url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+// };
+
+// @font-face {
+//     font-family: "Newsreader-thin";
+//     src: url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap');
+// };
+
+// @font-face {
+//     font-family: "Newsreader-bold";
+//     src: url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
+// };
+
+// $regular:"Newsreader-regular";
+// $thin:"Newsreader-thin";
+// $bold:"Newsreader-blod";
+
+// h1{
+//     font-family: $bold;
+// }
+
+// p{
+//     font-family: $regular;
+// }
+
+*{
+    font-family: "Newsreader", sans-serif;
+    color: #403A36;
+}
