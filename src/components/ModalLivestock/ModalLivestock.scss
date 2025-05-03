@@ -1,0 +1,136 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+@use "../../partials/mixins" as mix;
+
+.modal1{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1000; 
+        background-color: lightgray; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px; 
+        border-radius: 8px;
+        max-height: 80%;
+        overflow-y: auto;
+    
+    @include m.tablet{
+        // flex-direction: row;
+        width: 80vw;
+      
+    }
+    @include m.desktop{
+        width: 50vw;
+    }
+
+
+    &__labels{
+        font-size: 1.5rem;
+        @include m.tablet{
+            font-size: 1rem;
+        }
+    }
+
+    &__box--regular{
+        border: 2px solid c.$hoverColor;
+        font-size: 1.2rem;
+        height: 2rem;
+        width: 50%; /* 221px/288 */
+        margin-bottom: 2rem;
+        @include m.tablet{
+            width: 76%;
+          
+        }
+        @include m.desktop{
+            width: 50%;
+        }
+    }
+
+    &__box--message{
+        font-size: 1.2rem;
+       // width: 50%; /* 221px/288 */
+        height: 100px;
+        border: 2px solid c.$hoverColor;
+
+        @include m.tablet{
+            width: 100%;
+        }
+
+        @include m.desktop{
+            width: 90%;
+        }
+    }
+
+    &__button{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        height: 3rem;
+        width: 76.736111%; /* 221px/288 */
+        background-color: c.$hoverColor;
+        
+        border: none;
+        border-radius: 10px;
+
+        @include m.tablet{
+            align-self: center;
+        }
+        @include m.desktop{
+            width: 25%;
+            
+        }
+    }
+    
+
+    &__div--message{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        @include m.tablet{
+            width: 100%;
+            align-self: center;
+        }
+        @include m.desktop{
+            width: 100%;
+        }
+    }
+
+    &__div--info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        @include m.tablet{
+            width: 50%;
+        }
+        @include m.desktop{
+            width: 50%;
+        }
+    }
+
+    &__align{
+
+        @include m.tablet{
+            display: flex;
+            
+        }
+        @include m.desktop{
+            display: flex;
+            
+        }
+    }
+}
+
+#subject{
+    font-size: .75rem;
+    word-wrap: break-word;
+    height: 2rem;
+    width: 76.736111%; /* 221px/288 */
+    margin: 0;
+
+}

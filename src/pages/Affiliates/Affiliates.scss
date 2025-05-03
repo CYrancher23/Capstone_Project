@@ -1,0 +1,146 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+@use "../../partials/mixins" as mix;
+
+
+.links{
+    padding: 1rem;
+    padding-bottom: 3rem;
+    background-image: url("../../images/burned_paper.jpg");
+    background-size: cover;
+   
+    @include m.tablet{
+        padding: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    &__title{
+        z-index: 2;
+        font-size: 1.9rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: c.$hoverColor;
+        @include m.tablet{
+            font-size: 3rem;
+            
+        }
+    }
+
+    &__text{
+        // padding-left: 1rem;
+        
+        font-size: 1.4rem;
+        text-indent: 1.5rem;
+        @include m.tablet{
+            font-size: 1.5rem;
+           
+        }
+        @include m.desktop{
+            width: 88.888889%; /* 480px/540 */
+        }
+    }
+
+    
+
+    &__container{
+       
+      
+
+      @include m.desktop{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        height: 75vh;
+        width: 100%;
+        }
+      
+    }
+
+    &__card{
+      height: 33.789954%; /* 370px/1095 */
+      width: 100%;
+      border:2px solid lightgrey;
+      box-shadow:5px 10px gray;
+      margin: 1.5rem 0;
+      background-color: #f7cc58;
+
+      @include m.tablet{
+          height: 612px;
+      }
+
+      @include m.desktop{
+          width:25%;
+          height: 75%;
+      }
+  }
+
+  &__img{
+    margin-top: .2rem;
+    height: 57.30659%; /* 200px/349 */
+    width: 75%;
+    object-fit:fill;
+    
+    
+
+    @include m.tablet{
+        height: 45%;
+    }
+}
+
+  &__title--card{
+    font-size: 1.4rem;
+    color: c.$hoverColor;
+
+    @include m.tablet{
+        font-size: 1.5rem;
+    }
+
+    @include m.desktop{
+       
+    }
+   
+}
+
+&__text{
+    font-size: 1rem;
+    
+    @include m.tablet{
+        font-size: 1.3rem;
+    }
+
+    @include m.desktop{
+        height: 80px;
+        min-width: 0;
+        max-width: 100%;
+        overflow:auto;
+
+    }
+}
+
+&__button{
+    background-color: c.$hoverColor;
+    color: white;
+    border: none;
+    height: 2rem;
+    width: 5.625rem;
+
+    @include m.tablet{
+        width: 176px;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    @include m.desktop{
+        width: 9.375rem;
+    }
+    
+}
+
+&__button:hover{
+  @include m.desktop{
+    transform: scale(1.1);
+}
+}
+
+}

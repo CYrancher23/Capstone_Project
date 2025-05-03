@@ -1,0 +1,131 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+@use "../../partials/mixins" as mix;
+
+.livestock{
+    background-image: url("../../images/burned_paper.jpg");
+    background-size: cover;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    // background-color: white;
+    @include m.tablet{
+        padding: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    &__title{
+        font-size: 3rem;
+        color: c.$hoverColor;;
+        padding-top: 2rem;
+    }
+
+    &__description{
+        font-size: 1rem;
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+        @include m.desktop{
+            
+        }
+    }
+
+    &__name{
+        margin-top: 2rem;
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    &__text{
+        margin: 0;
+        padding-left: 1rem;
+        font-size: 1rem;
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+    }
+
+    &__text--span{
+        font-weight: 600;
+    }
+
+    &__img{
+        object-fit: cover;
+        
+        height: 12.5rem;
+        width: 100%;
+        @include m.tablet{
+            height: 25rem;
+        }
+        @include m.desktop{
+            object-fit:cover;
+            height: 18.75rem;
+            width: 100%;
+        }
+    }
+
+    &__container{
+        margin-top: 2rem;
+        background-color: #f7cc58;
+        border:2px solid lightgrey;
+        box-shadow:5px 10px gray;
+
+        @include m.desktop{
+            width: 22.077922%; /* 272px/1232 */
+            height: 50%;
+        }
+        
+    }
+    &__container:hover{
+        @include m.desktop{
+            transform: scale(1.1);
+        }
+    }
+
+    &__alignment{
+        @include m.desktop{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+    &__container--button{
+        display: flex;
+        justify-content: flex-end;
+        margin: .5rem;
+        @include m.tablet{
+            margin: 1rem;
+        }
+    }
+
+    &__button{
+        background-color: c.$hoverColor;
+        color: white;
+        border: none;
+        height: 2rem;
+        width: 5.625rem;
+        font-size: 1rem;
+
+        @include m.tablet{
+            width: 25%;
+            height: 2.5rem;
+        }
+
+        @include m.desktop{
+            width: 9.375rem;
+            
+        }
+    
+    }
+
+    &__button:hover{
+        @include m.desktop{
+          transform: scale(1.1);
+      }
+      }
+
+    &__form{
+        z-index: 4;
+    }
+}

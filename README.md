@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #Other dependencies
 npm install sass
 npm install react-burger-menu --save
+npm i @formspree/react
+npm install react-bootstrap bootstrap
 
 ## Available Scripts
 

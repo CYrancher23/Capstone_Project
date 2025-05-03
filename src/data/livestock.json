@@ -1,0 +1,48 @@
+[
+    {
+      "id": "1",
+      "name": "Ole #60",
+      "birthdate": "09/2018",
+      "sex":"Bull",
+      "breed":"Angus",
+      "availability": "Stud",
+      "image": "https://live.staticflickr.com/65535/51145561344_c694781034_b.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Tag 36-20",
+      "birthdate": "10/2020",
+      "sex":"Heifer",
+      "breed":"Angus",
+      "availability": "Purchase",
+      "image":"https://live.staticflickr.com/65535/51145004433_363bd9cc7d_b.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Tag 04-772",
+      "birthdate": "06/2016",
+      "sex":"Heifer",
+      "breed":"Angus",
+      "availability": "Purchase",
+      "image":"https://live.staticflickr.com/65535/51144105002_661461cbcf_b.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Tag 50-19",
+      "birthdate": "09/2019",
+      "sex":"Heifer",
+      "breed":"Angus",
+      "availability": "Purchase",
+      "image":"https://live.staticflickr.com/65535/51144993488_0369178640_b.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Tag 60-19",
+      "birthdate": "11/2019",
+      "sex":"Bull",
+      "breed":"Angus",
+      "availability": "Stud, Purchase",
+      "image":"https://live.staticflickr.com/65535/51145886775_99ca603868_b.jpg"
+    }
+ 
+]

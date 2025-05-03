@@ -1,0 +1,127 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+@use "../../partials/mixins" as mix;
+
+.hay{
+   
+
+    &--margin{
+        padding: 1rem 1rem 4rem 1rem;
+        background-image: url("../../images/burned_paper.jpg");
+        background-size: cover;
+
+        @include m.tablet{
+            padding: 2rem;
+        }
+    }
+
+    &__title{
+        font-size: 2rem;
+        
+
+        @include m.tablet{
+            font-size: 2.5rem;
+        }
+
+        &--page{
+            font-size: 3rem;
+            color: c.$hoverColor;
+        }
+    }
+
+    &__text{
+        font-size: 1rem;
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+    }
+
+    &__img{
+      
+        height: 12.5rem;
+        width: 100%;
+
+        @include m.tablet{
+            height: 25rem;
+            margin: 2rem 0;
+        }
+        @include m.desktop{
+            height: 25rem;
+            width: 100%; /* 480px/480 */
+            margin: 0;
+        }
+        
+    }
+
+   
+    &__services{
+        @include mix.alignColumn;
+        
+        @include m.desktop{
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__sale{
+        border:2px solid lightgrey;
+        box-shadow:5px 10px lightgrey;
+        margin-top: 2rem;
+        background-color: #f7cc58;
+        @include m.desktop{
+            align-self: flex-start;
+            margin-left: 2rem;
+            margin-top: 0;
+            width:50%;
+            
+            
+        }
+    }
+
+    &__custom{
+        border:2px solid lightgrey;
+        box-shadow:5px 10px lightgrey;
+        background-color: #f7cc58;
+        @include m.desktop{
+            width:50%;
+        }
+    }
+
+    &__container{
+        margin: 1rem;
+        @include m.tablet{
+            margin: 1.5rem 1.5rem 3rem 1.5rem;
+        }
+    }
+    
+    &__button{
+        background-color: c.$hoverColor;;
+        color: white;
+        border: none;
+        height: 2rem;
+        width: 5.625rem;
+        font-size: 1rem;
+
+        @include m.tablet{
+            width: 11rem;
+            height: 3rem;
+            font-size: 1.25rem;
+           
+        }
+    
+    }
+
+    &__button:hover{
+        @include m.desktop{
+          transform: scale(1.1);
+      }
+      }
+
+    &__container--button{
+        display: flex;
+        justify-content:flex-end ;
+        margin: 1.5rem;
+    }
+}
+

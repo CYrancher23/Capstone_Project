@@ -9,10 +9,13 @@
     // opacity:65%;
     padding: 1.5rem;
     color: white;
+    
+
 
     @include m.tablet{
     display: flex;
     justify-content: space-evenly;
+    
     }
 
 

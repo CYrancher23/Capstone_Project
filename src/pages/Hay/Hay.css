@@ -1,0 +1,173 @@
+* {
+  font-family: "Newsreader", sans-serif;
+  color: #403A36;
+}
+
+/*desktop*/
+.hay--margin {
+  margin: 1rem 1rem 4rem 1rem;
+}
+@media screen and (min-width: 321px) {
+  .hay--margin {
+    margin: 2rem;
+  }
+  .hay--margin #primary {
+    width: 100%;
+  }
+  .hay--margin #secondary {
+    width: 50%;
+  }
+}
+.hay__title {
+  font-size: 2rem;
+}
+@media screen and (min-width: 321px) {
+  .hay__title {
+    font-size: 2.5rem;
+  }
+  .hay__title #primary {
+    width: 100%;
+  }
+  .hay__title #secondary {
+    width: 50%;
+  }
+}
+.hay__title--page {
+  font-size: 3rem;
+  color: #EE6723;
+}
+.hay__text {
+  font-size: 1rem;
+}
+@media screen and (min-width: 321px) {
+  .hay__text {
+    font-size: 1.5rem;
+  }
+  .hay__text #primary {
+    width: 100%;
+  }
+  .hay__text #secondary {
+    width: 50%;
+  }
+}
+.hay__img {
+  height: 12.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 321px) {
+  .hay__img {
+    height: 25rem;
+    margin: 2rem 0;
+  }
+  .hay__img #primary {
+    width: 100%;
+  }
+  .hay__img #secondary {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hay__img {
+    height: 25rem;
+    width: 100%;
+    /* 480px/480 */
+    margin: 0;
+  }
+  .hay__img #primary {
+    width: 100%;
+  }
+  .hay__img #secondary {
+    width: 50%;
+  }
+}
+.hay__services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .hay__services {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hay__services #primary {
+    width: 100%;
+  }
+  .hay__services #secondary {
+    width: 50%;
+  }
+}
+.hay__sale {
+  border: 2px solid lightgrey;
+  box-shadow: 5px 10px lightgrey;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 769px) {
+  .hay__sale {
+    align-self: flex-start;
+    margin-left: 2rem;
+    margin-top: 0;
+    width: 50%;
+  }
+  .hay__sale #primary {
+    width: 100%;
+  }
+  .hay__sale #secondary {
+    width: 50%;
+  }
+}
+.hay__custom {
+  border: 2px solid lightgrey;
+  box-shadow: 5px 10px lightgrey;
+}
+@media screen and (min-width: 769px) {
+  .hay__custom {
+    width: 50%;
+  }
+  .hay__custom #primary {
+    width: 100%;
+  }
+  .hay__custom #secondary {
+    width: 50%;
+  }
+}
+.hay__container {
+  margin: 1rem;
+}
+@media screen and (min-width: 321px) {
+  .hay__container {
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
+  }
+  .hay__container #primary {
+    width: 100%;
+  }
+  .hay__container #secondary {
+    width: 50%;
+  }
+}
+.hay__button {
+  background-color: #3296FA;
+  color: white;
+  border: none;
+  height: 2rem;
+  width: 5.625rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 321px) {
+  .hay__button {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+  .hay__button #primary {
+    width: 100%;
+  }
+  .hay__button #secondary {
+    width: 50%;
+  }
+}
+.hay__container--button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem;
+}/*# sourceMappingURL=Hay.css.map */

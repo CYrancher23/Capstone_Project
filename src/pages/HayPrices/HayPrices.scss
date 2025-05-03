@@ -1,0 +1,108 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+
+#background_img{
+    background-image: url("../../images/burned_paper.jpg");
+    background-size: cover;
+}
+.hay_prices{
+       
+    
+    @include m.tablet{
+        padding: 0rem;
+    }
+
+    @include m.desktop{
+        display: flex;
+        justify-content: space-evenly;
+        height: 75vh;
+    }
+
+    &__card{
+        height: 33.789954%; /* 370px/1095 */
+        width: 100%;
+        border:2px solid lightgrey;
+        box-shadow:5px 10px gray;
+        padding: 1.5rem 0;
+        background-color: #f7cc58;
+        display: flex;
+        flex-direction: column;
+
+        @include m.tablet{
+            height: 612px;
+        }
+
+        @include m.desktop{
+            width:25%;
+            height: 75%;
+            
+        }
+    }
+
+    &__title{
+        //z-index: 2;
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0 2rem 0;
+        font-weight: 600;
+        color: c.$hoverColor;
+        @include m.tablet{
+            font-size: 1.75rem;
+            
+        }
+        @include m.desktop{
+            font-size: 3rem;
+
+        }
+    }
+
+    &__text{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        
+        @include m.tablet{
+            font-size: 1.3rem;
+        }
+
+        @include m.desktop{
+            overflow:auto;
+
+        }
+    }
+
+    &__button{
+        background-color: c.$hoverColor;;
+        color: white;
+        border: none;
+        height: 2rem;
+        width: 5.625rem;
+        margin: 2rem 0 2rem 0;
+        align-self: center;
+
+        @include m.tablet{
+            width: 176px;
+            height: 3rem;
+            font-size: 1.25rem;
+        }
+        @include m.desktop{
+            width: 9.375rem;
+        }
+        
+    }
+
+    &__button:hover{
+        @include m.desktop{
+          transform: scale(1.1);
+      }
+      }
+
+    
+
+    &__scroll{
+        width: 60%;
+        height: 40%;
+        font-size: 1rem;
+    }
+}

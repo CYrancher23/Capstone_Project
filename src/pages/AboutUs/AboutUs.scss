@@ -1,0 +1,99 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+@use "../../partials/mixins";
+
+
+.about{
+    background-image: url("../../images/burned_paper.jpg");
+    background-size: cover;
+    padding: 3rem 1rem;
+    // margin-bottom: 3rem;
+    // background-color: white;
+    @include m.tablet{
+        padding: 3rem 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    &__title{
+        font-size: 1.9rem;
+        text-align: center;
+        padding-top: 2rem;
+        color: c.$hoverColor;
+        font-weight: 600;
+        @include m.tablet{
+            font-size: 3rem;
+        }
+        @include m.desktop{
+            padding-top: 0;
+        }
+    }
+
+    &__text{
+        // padding-left: 1rem;
+        font-size: 1rem;
+        text-indent: 1.5rem;
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+        @include m.desktop{
+            
+        }
+    }
+
+    &__img{
+        object-fit: cover;
+        width: 100%;
+        @include m.tablet{
+            height: 25rem;
+        }
+        @include m.desktop{
+            object-fit:cover;
+            height: 100%;
+            
+        }
+    }
+
+    &__container--img{
+        @include m.desktop{
+            height: 100%;
+            width: 40%;
+            // float: left;
+            margin-right: 1rem;
+        }
+    }
+
+    &__container--text{
+        margin-top: 3rem;
+        margin-left: 2rem;
+      
+    }
+
+    &__container--title{
+      
+        @include m.desktop {
+            width: 50%;
+        }
+    }
+
+    &__container{
+        @include m.desktop{
+            display: flex;
+        }
+    }
+
+    &__headings{
+        color: c.$hoverColor;
+        margin: 2rem 0;
+
+        @include m.tablet{
+            font-size: 2rem;
+        }
+    }
+
+}
+
+.span{
+    font-size: 1.5rem;
+    color: c.$hoverColor;
+}

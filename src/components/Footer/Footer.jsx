@@ -17,7 +17,7 @@ function Footer () {
                     <Link className="footer__link" to="/aboutUs"><p className="footer__text">About The CY Ranch</p></Link>
                     <Link className="footer__link" to="/contactUs"><p className="footer__text">Contact Us</p></Link>
                     <Link className="footer__link" to="/affiliates"><p className="footer__text">Affiliates</p></Link>
-                    <Link className="footer__link" to="/sign-in"><p className="footer__text">Employee Sign-in</p></Link>
+                    <Link className="footer__link" to="/employee"><p className="footer__text">Employee Sign-in</p></Link>
                 </div>
             </div>
         )

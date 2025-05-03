@@ -1,0 +1,149 @@
+@use "../../partials/fonts";
+@use "../../partials/media" as m;
+@use "../../partials/colors" as c;
+
+#background_img{
+    background-image: url("../../images/burned_paper.jpg");
+    background-size: cover;
+}
+.employee{
+       
+    
+    @include m.tablet{
+        padding: 0rem;
+    }
+
+    @include m.desktop{
+        display: flex;
+        justify-content: space-evenly;
+        height: 75vh;
+    }
+
+    &__card{
+        height: 33.789954%; /* 370px/1095 */
+        width: 100%;
+        border:2px solid lightgrey;
+        box-shadow:5px 10px gray;
+        padding: 1.5rem 0;
+        background-color: #f7cc58;
+
+        @include m.tablet{
+            height: 612px;
+        }
+
+        @include m.desktop{
+            width:25%;
+            height: 75%;
+            
+        }
+    }
+
+
+    &__info{
+       height: 80%;
+
+        @include m.tablet{
+            
+        }
+    }
+
+    &__title{
+        font-size: 1.4rem;
+
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+
+        @include m.desktop{
+           
+        }
+       
+    }
+
+    &__text{
+        font-size: 1rem;
+        
+        
+        @include m.tablet{
+            font-size: 1.3rem;
+        }
+
+        @include m.desktop{
+            height: 80%;
+            min-width: 0;
+            max-width: 100%;
+            overflow:auto;
+
+        }
+    }
+
+    &__button{
+        background-color: c.$hoverColor;;
+        color: white;
+        border: none;
+        height: 2rem;
+        width: 5.625rem;
+        justify-items: end;
+        
+
+        @include m.tablet{
+            width: 176px;
+            height: 3rem;
+            font-size: 1.25rem;
+        }
+        @include m.desktop{
+            width: 9.375rem;
+        }
+        
+    }
+
+    &__button:hover{
+        @include m.desktop{
+          transform: scale(1.1);
+      }
+      }
+    
+      &__container--button{
+        
+        justify-items: end;
+        
+
+        @include m.tablet{
+            width: 176px;
+            height: 3rem;
+            font-size: 1.25rem;
+        }
+        @include m.desktop{
+            width: 9.375rem;
+        }
+        
+    }
+
+    &__info{
+        margin: .5rem;
+        @include m.tablet{
+            margin: 1rem;
+        }
+
+        @include m.desktop{
+            height: 50%; 
+        }
+        
+    }
+
+    &__container-button{
+        height: 40%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+
+        @include m.tablet{
+            height: 30%;
+            width: 100%;
+        }
+        @include m.desktop{
+
+        }
+    }
+}

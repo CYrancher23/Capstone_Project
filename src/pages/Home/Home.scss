@@ -1,12 +1,16 @@
 @use "../../partials/fonts";
 @use "../../partials/media" as m;
+@use "../../partials/colors" as c;
 
-
+#background_img{
+    background-image: url("../../images/burned_paper.jpg");
+    background-size: cover;
+}
 .home{
-    margin: 1rem;    
-
+       
+    
     @include m.tablet{
-        margin: 1.5rem;
+        padding: 0rem;
     }
 
     @include m.desktop{
@@ -19,7 +23,9 @@
         height: 33.789954%; /* 370px/1095 */
         width: 100%;
         border:2px solid lightgrey;
+        box-shadow:5px 10px gray;
         margin: 1.5rem 0;
+        background-color: #f7cc58;
 
         @include m.tablet{
             height: 612px;
@@ -28,6 +34,7 @@
         @include m.desktop{
             width:25%;
             height: 75%;
+            
         }
     }
 
@@ -74,11 +81,12 @@
     }
 
     &__button{
-        background-color: #3296FA;
+        background-color: c.$hoverColor;;
         color: white;
         border: none;
         height: 2rem;
         width: 5.625rem;
+        
 
         @include m.tablet{
             width: 176px;
@@ -90,6 +98,12 @@
         }
         
     }
+
+    &__button:hover{
+        @include m.desktop{
+          transform: scale(1.1);
+      }
+      }
 
     &__info{
         margin: .5rem;
